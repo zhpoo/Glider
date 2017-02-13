@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Glider</string>
+    <item name="glide_tag" type="id" />
+</resources>
