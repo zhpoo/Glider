@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'Glider'
+
+    publishedGroupId = 'com.zozx'
+    libraryName = 'Glider'
+    artifact = 'glider'
+
+    libraryDescription = 'A wrapper for Android Glide.'
+
+    siteUrl = 'https://github.com/zozx/Glider'
+    gitUrl = 'https://github.com/zozx/Glider.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'zozx'
+    developerName = 'Zhang Peng'
+    developerEmail = 'zozx@foxmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -8,7 +32,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
     }
     buildTypes {
         release {
@@ -24,3 +48,6 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'jp.wasabeef:glide-transformations:2.0.1'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
