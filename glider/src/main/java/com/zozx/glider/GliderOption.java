@@ -118,6 +118,9 @@ public class GliderOption {
 
         /**
          * set save image cache on disk enable.
+         *
+         * @param cache enable disk cache.
+         * @return this builder
          */
         public Builder diskCache(boolean cache) {
             this.diskCacheStrategy = cache ? DiskCacheStrategy.ALL : DiskCacheStrategy.NONE;
