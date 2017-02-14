@@ -1,2 +1,2 @@
 # Glider
-A wrapper for Android Glide.
+An android image loader wrapper for Glide.

@@ -55,6 +55,8 @@ public class Glider {
 
     /**
      * clear the disk cache ,should call in background.
+     *
+     * @param context the context
      */
     public static void clearDiskCache(final Context context) {
         Glide.get(context).clearDiskCache();
@@ -120,7 +122,7 @@ public class Glider {
     }
 
     /**
-     * display a image with given string rui into imageView.
+     * display a image with given string uri into imageView.
      *
      * @param view the view want to be used to display the image.
      * @param uri  the string uri. can be a url or "file://" + File.
@@ -130,7 +132,7 @@ public class Glider {
     }
 
     /**
-     * display a image with given string rui into imageView.
+     * display a image with given string uri into imageView.
      *
      * @param view     the view want to be used to display the image.
      * @param uri      the string uri. can be a url or "file://" + File.
@@ -151,7 +153,7 @@ public class Glider {
     }
 
     /**
-     * display a circle image with given string rui into imageView.
+     * display a circle image with given string uri into imageView.
      * NOTE:will display default head_men drawable when uri error.
      *
      * @param view the view want to be used to display the image.
@@ -179,8 +181,9 @@ public class Glider {
      * display a circle image with given drawable resource into imageView,
      * allow setting own error drawable when uri error.
      *
-     * @param view the view want to be used to display the image.
-     * @param uri  the string uri. can be a url or "file://" + File.
+     * @param view  the view want to be used to display the image.
+     * @param uri   the string uri. can be a url or "file://" + File.
+     * @param error the drawable when error happened
      */
     public static void loadCircle(ImageView view, String uri, @DrawableRes int error) {
         load(builder(view, uri)
