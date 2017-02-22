@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.zozx.glider"
+        applicationId "com.zozx.glider.demo"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
@@ -19,6 +19,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.zozx.android:glider:1.0.0'
 }
